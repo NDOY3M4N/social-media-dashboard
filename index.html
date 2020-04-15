@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-bottom: 2rem}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__title">
+        <h2 class="main-title">Social Media Dashboard</h2>
+        <span class="submain-title text-gray">Total followers: 23,004</span>
+      </div>
+      <div class="header__toggle">
+        <span class="desc-toggle text-gray">Dark Mode</span>
+        <label class="switch" for="theme_toggle">
+          <input type="checkbox" name="theme_toggle" id="theme_toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="top">
+        <div class="grid">
+          <article class="card facebook">
+            <div class="user-section flex">
+              <span class="social-icon"><img src="images/icon-facebook.svg" alt=""></span>
+              <span class="username text-gray">@nathanf</span>
+            </div>
+            <h1 class="followers flex">
+              1987
+              <span class="followers__text text-gray">followers</span>
+            </h1>
+            <span class="trend green flex">
+              <img src="images/icon-up.svg" alt="Upward Icon">
+              <span>12 Today</span>
+            </span>
+          </article>
+          <article class="card twitter">
+            <div class="user-section flex">
+              <span class="social-icon"><img src="images/icon-twitter.svg" alt=""></span>
+              <span class="username text-gray">@nathanf</span>
+            </div>
+            <h1 class="followers flex">
+              1044
+              <span class="followers__text text-gray">followers</span>
+            </h1>
+            <span class="trend green flex">
+              <img src="images/icon-up.svg" alt="Upward Icon">
+              <span>99 Today</span>
+            </span>
+          </article>
+          <article class="card instagram">
+            <div class="user-section flex">
+              <span class="social-icon"><img src="images/icon-instagram.svg" alt=""></span>
+              <span class="username text-gray">@realnathanf</span>
+            </div>
+            <h1 class="followers flex">
+              11k
+              <span class="followers__text text-gray">followers</span>
+            </h1>
+            <span class="trend green flex">
+              <img src="images/icon-up.svg" alt="Upward Icon">
+              <span>1099 Today</span>
+            </span>
+          </article>
+          <article class="card youtube">
+            <div class="user-section flex">
+              <span class="social-icon"><img src="images/icon-youtube.svg" alt=""></span>
+              <span class="username text-gray">Nathan F.</span>
+            </div>
+            <h1 class="followers flex">
+              8239
+              <span class="followers__text text-gray">Subscribers</span>
+            </h1>
+            <span class="trend red flex">
+              <img src="images/icon-down.svg" alt="Downward Icon">
+              <span>144 Today</span>
+            </span>
+          </article>
+        </div>
+      </section>
+      <section class="bottom">
+        <h3 class="main-title-2">Overview - Today</h3>
+        <div class="grid">
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Page Views</span>
+              <img src="images/icon-facebook.svg" alt="Icon of Facebook" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">87</span>
+              <span class="trend green flex">
+                <img src="images/icon-up.svg" alt="Upward Icon">
+                <span>3%</span>
+              </span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Likes</span>
+              <img src="images/icon-facebook.svg" alt="Icon of Facebook" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">52</span>
+              <span class="trend red flex">
+                <img src="images/icon-down.svg" alt="Downward Icon">
+                <span>2%</span>
+              </span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Likes</span>
+              <img src="images/icon-instagram.svg" alt="Icon of Instagram" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">5462</span>
+              <span class="trend green flex">
+                <img src="images/icon-up.svg" alt="Upward Icon">
+                <span>2257%</span>
+              </span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Profile Views</span>
+              <img src="images/icon-instagram.svg" alt="Icon of Instagram" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">52k</span>
+              <span class="trend green flex">
+                <img src="images/icon-up.svg" alt="Upward Icon">
+                <span>1375%</span>
+              </span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Retweets</span>
+              <img src="images/icon-twitter.svg" alt="Icon of Twitter" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">117</span>
+              <span class="trend green flex">
+                <img src="images/icon-up.svg" alt="Upward Icon">
+                <span>303%</span>
+              </span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Likes</span>
+              <img src="images/icon-twitter.svg" alt="Icon of Twitter" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">507</span>
+              <span class="trend green flex">
+                <img src="images/icon-up.svg" alt="Upward Icon">
+                <span>553%</span>
+              </span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Likes</span>
+              <img src="images/icon-youtube.svg" alt="Icon of Youtube" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">107</span>
+              <span class="trend red flex">
+                <img src="images/icon-down.svg" alt="Downward Icon">
+                <span>19%</span>
+              </span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flex card-top">
+              <span class="number-desc text-gray">Total Views</span>
+              <img src="images/icon-youtube.svg" alt="Icon of Youtube" class="social-icon" />
+            </div>
+            <div class="flex card-bottom">
+              <span class="number-overview">1407</span>
+              <span class="trend red flex">
+                <img src="images/icon-down.svg" alt="Downward Icon">
+                <span>12%</span>
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/NDOY3M4N">Abdoulaye NDOYE</a>.
+  </footer>
+</body>
+</html>
