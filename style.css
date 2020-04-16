@@ -181,12 +181,6 @@ body {
   background: var(--dark-theme-toggle);
 }
 
-/* change the color of desc-toggle when hover on the switch
-  .header__toggle > .switch:hover .header__toggle > .desc-toggle {
-    color: red;
-  }
- change the color of desc-toggle when hover on the switch */
-
 .main {
   position: relative;
   margin-top: -3rem;
@@ -262,6 +256,10 @@ body.dark {
 
 .header__title.dark {
   border-bottom-color: var(--dark-body-subText-color);
+}
+
+.header__toggle.dark:hover .desc-toggle{
+  color: #fff;
 }
 
 .card.dark {
